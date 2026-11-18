@@ -1,0 +1,28 @@
+button {
+    background-color: #E8C994;
+    color: #21130F;
+    border: 2px solid #E8C994;
+    border-radius: 8px;
+    padding: 2px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #E8C994;
+    transform: scale(1.05);
+}
+
+.a a{
+    font-size: 25px;
+    text-decoration: underline;
+    transition: 0.15s;
+}
+
+.a a:hover{
+    color:#550100;
+    text-decoration: underline;
+}

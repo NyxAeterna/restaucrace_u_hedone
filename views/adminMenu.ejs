@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa jídel</title>
+    <link rel="stylesheet" href="/css/adminMenu.css"> 
+</head>
+<body>
+    <%-include('./partials/header2')%>
+    <h2>Správa jídel</h2>
+   
+    <div class="a">
+        <a href="/admin">Zpět do administrace</a>
+        <a href="/admin/menu/add">Přidat jídlo</a>
+    </div>
+    
+    
+    <section>
+        <% items.forEach(item => { %>
+            <article>
+                <h2><%= item.name %></h2>
+                <p><%= item.description %></p>
+                <p>Cena: <%= item.price %> Kč</p>
+                <p>Kategorie: <%= item.category_name || 'Bez kategorie' %></p>
+             
+                
+             <div class="change"><a href="/admin/menu/<%= item.id %>/edit">Upravit</a>
+    
+                <form method="POST" action="/admin/menu/<%= item.id %>/delete">
+                    <button type="submit">Smazat</button>
+            </div>
+            <hr>
+            <br>   
+                
+                
+            </form>
+            </article>
+        <% }) %>
+    </section>
+</body>
+</html>

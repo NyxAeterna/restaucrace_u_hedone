@@ -1,0 +1,27 @@
+.menu {
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h2 {
+    padding-left: 30px;
+    display: flex;
+    align-items: start;
+
+    
+}
+.dp {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+.a a{
+    transition: 0.15s;
+}
+
+.a a:hover{
+    color:#550100;
+    text-decoration: underline;
+}

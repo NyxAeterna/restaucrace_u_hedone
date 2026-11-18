@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení administrátora</title>
+    <link rel="stylesheet" href="/css/adminMenu.css">
+</head>
+<body>
+    <%-include('./partials/header')%>
+    <h1>Přihlášení administrátora</h1>
+<br>
+    <form action="/login" method="POST">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Heslo:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Přihlásit se</button>
+    </form>
+<br>
+<br>
+    <a href="/">Zpět na hlavní stránku</a>
+</body>
+</html>

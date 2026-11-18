@@ -1,0 +1,13 @@
+table {
+    display: flex;
+    justify-content: center;
+}
+
+.a a{
+    transition: 0.15s;
+}
+
+.a a:hover{
+    color:#550100;
+    text-decoration: underline;
+}

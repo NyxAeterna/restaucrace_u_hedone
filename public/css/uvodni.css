@@ -1,0 +1,13 @@
+img {
+    max-height: 200px;
+    padding: 5px;
+}
+
+.a a{
+    transition: 0.15s;
+}
+
+.a a:hover{
+    color:#550100;
+    text-decoration: underline;
+}

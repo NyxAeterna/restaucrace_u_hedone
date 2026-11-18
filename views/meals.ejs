@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naše nabídka</title>
+    <link rel="stylesheet" href="/css/meals.css"> 
+</head>
+<body>
+    <%-include('./partials/header')%>
+   
+   <div class="menu"><h1>Jídelní lístek</h1></div> 
+    
+    <% items.forEach(item => { %>
+        <article>
+            <h2><%= item.name %></h2>
+          <div class="dp">
+                <p><%= item.description %></p>
+                <p><strong><%= item.price %> Kč</strong></p>
+                
+            </div>    
+        </article>
+
+   <% }) %> 
+        <div class="a"><a href="/menu">Zpět na výběr kategorií</a> </div>
+   
+</body>
+</html>
